@@ -1,0 +1,6 @@
+robotframework==7.3.2
+robotframework-datadriver==1.11.2
+robotframework-pabot==5.1.0
+robotframework-pythonlibcore==4.4.1
+robotframework-seleniumlibrary==6.8.0
+robotframework-stacktrace==0.4.1

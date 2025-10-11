@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         ROBOT_OPTIONS = "--outputdir results"
-        JIRA_API_TOKEN = credentials('c2bde01a-7d45-428f-8264-703efb5f0d18')  // Stored securely in Jenkins
+        JIRA_API_TOKEN = credentials('c2bde01a-7d45-428f-8264-703efb5f0d18')  // Stored securely in
     }
 
     stages {

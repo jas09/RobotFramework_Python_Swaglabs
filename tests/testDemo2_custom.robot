@@ -43,7 +43,7 @@ Validating End to End Flow till successful product placement
     Products.Add Products To Cart And Checkout    ${listOfProducts}
     YourCart.Verify Products In YourCart
     YourCartPage.Click on Checkout and navigate to Your Information page
-    InformationPage.Provide buyer details and click on continue    Azharulla    Mohammed    560036
+    InformationPage.Provide buyer details and click on continue    Rukhsana    Mohammed    560036
     Overview.Verify Products In OverviewPage
     Click on Finish and verify order success message
 

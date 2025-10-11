@@ -16,8 +16,8 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 bat '''
-                    python3 -m venv venv
-                    . venv/bin/activate
+                    python -m venv venv
+                    call venv\\Scripts\\activate
                     pip install --upgrade pip
                     pip install -r requirements.txt
                 '''
@@ -27,9 +27,9 @@ pipeline {
         stage('Run Robot Tests (Parallel)') {
             steps {
                 bat '''
-                    . venv/bin/activate
-                    mkdir -p results
-                    pabot $ROBOT_OPTIONS tests/
+                    call venv\\Scripts\\activate
+                    mkdir results
+                    pabot %ROBOT_OPTIONS% tests/
                 '''
             }
         }
@@ -39,17 +39,18 @@ pipeline {
                 publishRobotResults logFileName: 'output.xml', outputPath: 'results'
             }
         }
-		/*
+
+        /*
         stage('Update Jira') {
             steps {
                 script {
-                    def storyKey = sh(script: "git log -1 --pretty=%B | grep -oE '[A-Z]+-[0-9]+'", returnStdout: true).trim()
+                    def storyKey = bat(script: 'git log -1 --pretty=%B | findstr /R "[A-Z]*-[0-9]*"', returnStdout: true).trim()
                     if (storyKey) {
                         bat """
-                            curl -X POST \
-                            -H "Authorization: Bearer ${JIRA_API_TOKEN}" \
-                            -H "Content-Type: application/json" \
-                            -d '{"transition": {"id": "31"}}' \
+                            curl -X POST ^
+                            -H "Authorization: Bearer ${JIRA_API_TOKEN}" ^
+                            -H "Content-Type: application/json" ^
+                            -d "{\\"transition\\": {\\"id\\": \\"31\\"}}" ^
                             https://neverabdicate.atlassian.net/rest/api/3/issue/${storyKey}/transitions
                         """
                     } else {
@@ -58,9 +59,9 @@ pipeline {
                 }
             }
         }
-		*/
+        */
     }
-	
+
     post {
         always {
             archiveArtifacts artifacts: 'results/*.*', fingerprint: true

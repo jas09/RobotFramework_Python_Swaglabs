@@ -1,0 +1,12 @@
+*** Test Cases ***;${username};${password}
+Invalid username;asasa;learning
+Invalid password;rahulshettyacademy;23131eeqw
+special characters;^()!;learning
+Both wrong;wronguser;wrongpass
+password empty;rahulshettyacademy;
+username empty;;learning
+both empty;;
+username_OR;' OR '1'='1;learning
+password_OR;rahulshettyacademy;' OR '1'='1
+long password;rahulshettyacademy;verylongpasswordvalueover255characters...............................................................
+;;

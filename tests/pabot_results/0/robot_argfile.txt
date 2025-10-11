@@ -1,0 +1,16 @@
+--suite Tests.Missilenious
+--variable CALLER_ID:a7409b9a5b0f49b6ae14928b713a58cd
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:2
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:12
+--variable PABOTQUEUEINDEX:0
+--variable PABOTLASTLEVEL:Tests.Missilenious
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\0
+--consolecolors off
+--consolemarkers off
+.

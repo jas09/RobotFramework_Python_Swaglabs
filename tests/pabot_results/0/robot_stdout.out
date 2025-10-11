@@ -1,0 +1,16 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Missilenious :: Miscellaneous functionalities Validation                
+==============================================================================
+Select the form and navigate to child window                          | PASS |
+------------------------------------------------------------------------------
+Validate Child Window Functionality                                   | PASS |
+------------------------------------------------------------------------------
+Tests.Missilenious :: Miscellaneous functionalities Validation        | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  D:\Projects\PythonProject_RobotFramework\tests\pabot_results\0\output.xml

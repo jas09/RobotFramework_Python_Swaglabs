@@ -1,0 +1,20 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.testDemo2 custom :: To validate login form                              
+==============================================================================
+Validate Successful Login                                             | PASS |
+------------------------------------------------------------------------------
+Validate Locked_out_user Login                                        | PASS |
+------------------------------------------------------------------------------
+Validate Problem_user Login                                           | PASS |
+------------------------------------------------------------------------------
+Validating End to End Flow till successful product placement          | PASS |
+------------------------------------------------------------------------------
+Tests.testDemo2 custom :: To validate login form                      | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  D:\Projects\PythonProject_RobotFramework\tests\pabot_results\5\output.xml

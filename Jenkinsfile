@@ -15,7 +15,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh '''
+                bat '''
                     python3 -m venv venv
                     . venv/bin/activate
                     pip install --upgrade pip
@@ -26,7 +26,7 @@ pipeline {
 
         stage('Run Robot Tests (Parallel)') {
             steps {
-                sh '''
+                bat '''
                     . venv/bin/activate
                     mkdir -p results
                     pabot $ROBOT_OPTIONS tests/
@@ -45,7 +45,7 @@ pipeline {
                 script {
                     def storyKey = sh(script: "git log -1 --pretty=%B | grep -oE '[A-Z]+-[0-9]+'", returnStdout: true).trim()
                     if (storyKey) {
-                        sh """
+                        bat """
                             curl -X POST \
                             -H "Authorization: Bearer ${JIRA_API_TOKEN}" \
                             -H "Content-Type: application/json" \

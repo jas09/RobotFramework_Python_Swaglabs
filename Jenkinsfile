@@ -35,8 +35,9 @@ pipeline {
         }
 
         stage('Publish Results') {
-            steps {
-				if (fileExists('results/output.xml')){
+    steps {
+        script {
+            if (fileExists('results/output.xml')) {
                 robot {
                     outputPath 'results'
                     outputFileName 'output.xml'
@@ -45,11 +46,12 @@ pipeline {
                     passThreshold 100.0
                     unstableThreshold 80.0
                 }
-				} else {
-					echo "Robot output not found. Skipping publish."
-					}
+            } else {
+                echo "Robot output not found. Skipping publish."
             }
         }
+    }
+}
 
         /*
         stage('Update Jira') {

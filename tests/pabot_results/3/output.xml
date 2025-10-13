@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-11T14:24:06.290143" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-13T15:56:28.410036" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Projects\PythonProject_RobotFramework\tests">
 <suite id="s1-s1" name="testDemo1" source="D:\Projects\PythonProject_RobotFramework\tests\testDemo1.robot">
 <test id="s1-s1-t1" name="Validate Successful Login" line="7">
 <kw name="Open the browser with Swaglabs URL">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:06.454454" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<msg time="2025-10-13T15:56:28.932877" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>Firefox</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-10-11T14:24:06.454202" elapsed="6.861625"/>
+<status status="PASS" start="2025-10-13T15:56:28.932663" elapsed="11.837375"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:13.316478" level="INFO">Opening url 'https://www.saucedemo.com/v1/index.html'</msg>
+<msg time="2025-10-13T15:56:40.770756" level="INFO">Opening url 'https://www.saucedemo.com/v1/index.html'</msg>
 <arg>https://www.saucedemo.com/v1/index.html</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-11T14:24:13.316152" elapsed="0.869899"/>
+<status status="PASS" start="2025-10-13T15:56:40.770442" elapsed="0.748548"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:06.453432" elapsed="7.732946"/>
+<status status="PASS" start="2025-10-13T15:56:28.931922" elapsed="12.587400"/>
 </kw>
 <kw name="fill the login form">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:14.188221" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-10-13T15:56:41.520903" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:14.187530" elapsed="0.204976"/>
+<status status="PASS" start="2025-10-13T15:56:41.520234" elapsed="0.113815"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:14.393065" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-10-11T14:24:14.401980" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-10-13T15:56:41.634589" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-10-13T15:56:41.642731" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:14.392744" elapsed="0.039739"/>
+<status status="PASS" start="2025-10-13T15:56:41.634308" elapsed="0.023708"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:14.433142" level="INFO">Clicking button 'login-button'.</msg>
+<msg time="2025-10-13T15:56:41.658740" level="INFO">Clicking button 'login-button'.</msg>
 <arg>login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:14.432755" elapsed="0.996256"/>
+<status status="PASS" start="2025-10-13T15:56:41.658318" elapsed="0.919898"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:14.186807" elapsed="1.242473"/>
+<status status="PASS" start="2025-10-13T15:56:41.519699" elapsed="1.058711"/>
 </kw>
 <kw name="Verify products page is displayed">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:15.430366" level="INFO">Verifying element 'xpath://div[text()='Products']' contains exact text 'Products'.</msg>
+<msg time="2025-10-13T15:56:42.579342" level="INFO">Verifying element 'xpath://div[text()='Products']' contains exact text 'Products'.</msg>
 <arg>xpath://div[text()='Products']</arg>
 <arg>Products</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-10-11T14:24:15.429979" elapsed="0.023009"/>
+<status status="PASS" start="2025-10-13T15:56:42.579072" elapsed="0.012740"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:15.429547" elapsed="0.023729"/>
+<status status="PASS" start="2025-10-13T15:56:42.578651" elapsed="0.013294"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-11T14:24:15.453686" elapsed="3.243955"/>
+<status status="PASS" start="2025-10-13T15:56:42.592185" elapsed="2.640527"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:06.452889" elapsed="12.244842"/>
+<status status="PASS" start="2025-10-13T15:56:28.931350" elapsed="16.301488"/>
 </test>
 <doc>To validate login form</doc>
-<status status="PASS" start="2025-10-11T14:24:06.314317" elapsed="12.383818"/>
+<status status="PASS" start="2025-10-13T15:56:28.433904" elapsed="16.799502"/>
 </suite>
-<status status="PASS" start="2025-10-11T14:24:06.304347" elapsed="12.394257"/>
+<status status="PASS" start="2025-10-13T15:56:28.425054" elapsed="16.808977"/>
 </suite>
 <statistics>
 <total>

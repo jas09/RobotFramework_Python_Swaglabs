@@ -1,201 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-11T14:24:06.245839" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-13T15:56:28.374313" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Projects\PythonProject_RobotFramework\tests">
 <suite id="s1-s1" name="Missilenious" source="D:\Projects\PythonProject_RobotFramework\tests\Missilenious.robot">
 <test id="s1-s1-t1" name="Select the form and navigate to child window" line="8">
 <kw name="Navigate to LoginPage Url">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:06.424569" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<msg time="2025-10-13T15:56:28.942954" level="INFO">Creating an instance of the Edge WebDriver.</msg>
 <arg>Edge</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-10-11T14:24:06.424383" elapsed="1.204092"/>
+<status status="PASS" start="2025-10-13T15:56:28.942691" elapsed="2.471242"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:07.628840" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<msg time="2025-10-13T15:56:31.414665" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
 <arg>${url_loginPage}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-11T14:24:07.628647" elapsed="0.287283"/>
+<status status="PASS" start="2025-10-13T15:56:31.414293" elapsed="0.404081"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:06.423567" elapsed="1.492529"/>
+<status status="PASS" start="2025-10-13T15:56:28.941803" elapsed="2.876762"/>
 </kw>
 <kw name="Fill the login details and select user option">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:07.917042" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<msg time="2025-10-13T15:56:31.819766" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
 <arg>id:username</arg>
 <arg>rahulshettyacademy</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:07.916731" elapsed="0.076396"/>
+<status status="PASS" start="2025-10-13T15:56:31.819308" elapsed="0.103376"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:07.993577" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-10-11T14:24:08.018129" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-10-13T15:56:31.923397" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-10-13T15:56:31.949510" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>learning</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:07.993308" elapsed="0.058044"/>
+<status status="PASS" start="2025-10-13T15:56:31.922992" elapsed="0.074230"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:08.051718" level="INFO">Clicking element 'css:input[value='user']'.</msg>
+<msg time="2025-10-13T15:56:31.997660" level="INFO">Clicking element 'css:input[value='user']'.</msg>
 <arg>css:input[value='user']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.051497" elapsed="0.052140"/>
+<status status="PASS" start="2025-10-13T15:56:31.997420" elapsed="0.057876"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>css:.modal-body</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.103823" elapsed="0.228061"/>
+<status status="PASS" start="2025-10-13T15:56:32.055456" elapsed="0.244192"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:08.332449" level="INFO">Clicking button 'id:okayBtn'.</msg>
+<msg time="2025-10-13T15:56:32.300107" level="INFO">Clicking button 'id:okayBtn'.</msg>
 <arg>id:okayBtn</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.332110" elapsed="0.050070"/>
+<status status="PASS" start="2025-10-13T15:56:32.299838" elapsed="0.058300"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:08.382664" level="INFO">Clicking button 'id:okayBtn'.</msg>
+<msg time="2025-10-13T15:56:32.358808" level="INFO">Clicking button 'id:okayBtn'.</msg>
 <arg>id:okayBtn</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.382370" elapsed="0.041598"/>
+<status status="PASS" start="2025-10-13T15:56:32.358377" elapsed="0.049012"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
 <arg>css:.modal-body</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.424266" elapsed="0.216404"/>
+<status status="PASS" start="2025-10-13T15:56:32.407541" elapsed="0.219624"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:08.641636" level="INFO">Selecting options from selection list 'css:select.form-control' by value teach.</msg>
+<msg time="2025-10-13T15:56:32.627819" level="INFO">Selecting options from selection list 'css:select.form-control' by value teach.</msg>
 <arg>css:select.form-control</arg>
 <arg>teach</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.641264" elapsed="0.043600"/>
+<status status="PASS" start="2025-10-13T15:56:32.627428" elapsed="0.047338"/>
 </kw>
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:08.685229" level="INFO">Selecting checkbox 'terms'.</msg>
+<msg time="2025-10-13T15:56:32.675134" level="INFO">Selecting checkbox 'terms'.</msg>
 <arg>terms</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.685010" elapsed="0.046675"/>
+<status status="PASS" start="2025-10-13T15:56:32.674917" elapsed="0.051964"/>
 </kw>
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:08.732112" level="INFO">Verifying checkbox 'terms' is selected.</msg>
+<msg time="2025-10-13T15:56:32.727574" level="INFO">Verifying checkbox 'terms' is selected.</msg>
 <arg>terms</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.731872" elapsed="0.010886"/>
+<status status="PASS" start="2025-10-13T15:56:32.727193" elapsed="0.011564"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:07.916301" elapsed="0.826562"/>
+<status status="PASS" start="2025-10-13T15:56:31.818881" elapsed="0.919980"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:06.422964" elapsed="2.320005"/>
+<status status="PASS" start="2025-10-13T15:56:28.941118" elapsed="3.797846"/>
 </test>
 <test id="s1-s1-t2" name="Validate Child Window Functionality" line="12">
 <kw name="Select the link of child window">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:08.743849" level="INFO">Clicking element 'xpath://a[contains(text(),'ResumeAssistance')]'.</msg>
+<msg time="2025-10-13T15:56:32.742718" level="INFO">Clicking element 'xpath://a[contains(text(),'ResumeAssistance')]'.</msg>
 <arg>xpath://a[contains(text(),'ResumeAssistance')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.743714" elapsed="0.066778"/>
+<status status="PASS" start="2025-10-13T15:56:32.739706" elapsed="0.068815"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-11T14:24:11.811597" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-10-13T15:56:35.809241" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-11T14:24:08.810753" elapsed="3.001060"/>
+<status status="PASS" start="2025-10-13T15:56:32.808747" elapsed="3.000649"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:08.743504" elapsed="3.068499"/>
+<status status="PASS" start="2025-10-13T15:56:32.739486" elapsed="3.070072"/>
 </kw>
 <kw name="Verify the user is switched to child window">
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.812912" elapsed="0.034965"/>
+<status status="PASS" start="2025-10-13T15:56:35.810198" elapsed="0.039636"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:11.848811" level="INFO">Verifying element 'css:h1' contains exact text 'DOCUMENTS REQUEST'.</msg>
+<msg time="2025-10-13T15:56:35.850365" level="INFO">Verifying element 'css:h1' contains exact text 'DOCUMENTS REQUEST'.</msg>
 <arg>css:h1</arg>
 <arg>DOCUMENTS REQUEST</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.848333" elapsed="0.055428"/>
+<status status="PASS" start="2025-10-13T15:56:35.850062" elapsed="0.030879"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:11.812326" elapsed="0.091602"/>
+<status status="PASS" start="2025-10-13T15:56:35.809802" elapsed="0.071302"/>
 </kw>
 <kw name="Grab the Email ID in the child window">
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:11.925096" level="INFO">${text} = Please email us at mentor@rahulshettyacademy.com with below template to receive response</msg>
+<msg time="2025-10-13T15:56:35.909103" level="INFO">${text} = Please email us at mentor@rahulshettyacademy.com with below template to receive response</msg>
 <var>${text}</var>
 <arg>css:.red</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.904637" elapsed="0.020542"/>
+<status status="PASS" start="2025-10-13T15:56:35.881805" elapsed="0.027365"/>
 </kw>
 <kw name="Split String" owner="String">
-<msg time="2025-10-11T14:24:11.925766" level="INFO">@{words} = [ Please email us  |  mentor@rahulshettyacademy.com with below templ | e to receive response ]</msg>
+<msg time="2025-10-13T15:56:35.909897" level="INFO">@{words} = [ Please email us  |  mentor@rahulshettyacademy.com with below templ | e to receive response ]</msg>
 <var>@{words}</var>
 <arg>${text}</arg>
 <arg>at</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.925400" elapsed="0.000412"/>
+<status status="PASS" start="2025-10-13T15:56:35.909518" elapsed="0.000414"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2025-10-11T14:24:11.926272" level="INFO">${text_split} =  mentor@rahulshettyacademy.com with below templ</msg>
+<msg time="2025-10-13T15:56:35.910519" level="INFO">${text_split} =  mentor@rahulshettyacademy.com with below templ</msg>
 <var>${text_split}</var>
 <arg>${words}</arg>
 <arg>1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.925977" elapsed="0.000349"/>
+<status status="PASS" start="2025-10-13T15:56:35.910138" elapsed="0.000415"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-10-11T14:24:11.926766" level="INFO"> mentor@rahulshettyacademy.com with below templ</msg>
+<msg time="2025-10-13T15:56:35.910868" level="INFO"> mentor@rahulshettyacademy.com with below templ</msg>
 <arg>${text_split}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.926508" elapsed="0.000321"/>
+<status status="PASS" start="2025-10-13T15:56:35.910693" elapsed="0.000218"/>
 </kw>
 <kw name="Split String" owner="String">
-<msg time="2025-10-11T14:24:11.927349" level="INFO">@{words_2} = [ mentor@rahulshettyacademy.com | with | below | templ ]</msg>
+<msg time="2025-10-13T15:56:35.911188" level="INFO">@{words_2} = [ mentor@rahulshettyacademy.com | with | below | templ ]</msg>
 <var>@{words_2}</var>
 <arg>${text_split}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.926992" elapsed="0.000578"/>
+<status status="PASS" start="2025-10-13T15:56:35.911011" elapsed="0.000362"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2025-10-11T14:24:11.928123" level="INFO">${email} = mentor@rahulshettyacademy.com</msg>
+<msg time="2025-10-13T15:56:35.911671" level="INFO">${email} = mentor@rahulshettyacademy.com</msg>
 <var>${email}</var>
 <arg>${words_2}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.927787" elapsed="0.000379"/>
+<status status="PASS" start="2025-10-13T15:56:35.911494" elapsed="0.000204"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2025-10-11T14:24:11.928701" level="INFO">${email} = mentor@rahulshettyacademy.com</msg>
+<msg time="2025-10-13T15:56:35.912092" level="INFO">${email} = mentor@rahulshettyacademy.com</msg>
 <arg>${email}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.928373" elapsed="0.000400"/>
+<status status="PASS" start="2025-10-13T15:56:35.911819" elapsed="0.000340"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:11.904193" elapsed="0.024683"/>
+<status status="PASS" start="2025-10-13T15:56:35.881310" elapsed="0.030940"/>
 </kw>
 <kw name="Switch to parent window and enter the email">
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>MAIN</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.929564" elapsed="0.029846"/>
+<status status="PASS" start="2025-10-13T15:56:35.912756" elapsed="0.048459"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:11.983812" level="INFO">Page title is 'LoginPage Practise | Rahul Shetty Academy'.</msg>
+<msg time="2025-10-13T15:56:35.997958" level="INFO">Page title is 'LoginPage Practise | Rahul Shetty Academy'.</msg>
 <arg>LoginPage Practise | Rahul Shetty Academy</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.959759" elapsed="0.024181"/>
+<status status="PASS" start="2025-10-13T15:56:35.961531" elapsed="0.036628"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-11T14:24:11.984671" level="INFO">Typing text 'mentor@rahulshettyacademy.com' into text field 'id:username'.</msg>
+<msg time="2025-10-13T15:56:35.998846" level="INFO">Typing text 'mentor@rahulshettyacademy.com' into text field 'id:username'.</msg>
 <arg>id:username</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-11T14:24:11.984177" elapsed="0.157925"/>
+<status status="PASS" start="2025-10-13T15:56:35.998418" elapsed="0.386057"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:11.929073" elapsed="0.213158"/>
+<status status="PASS" start="2025-10-13T15:56:35.912436" elapsed="0.472172"/>
 </kw>
-<status status="PASS" start="2025-10-11T14:24:08.743252" elapsed="3.399103"/>
+<status status="PASS" start="2025-10-13T15:56:32.739226" elapsed="3.645512"/>
 </test>
 <doc>Miscellaneous functionalities Validation</doc>
-<status status="PASS" start="2025-10-11T14:24:06.266570" elapsed="5.876462"/>
+<status status="PASS" start="2025-10-13T15:56:28.399730" elapsed="7.985667"/>
 </suite>
-<status status="PASS" start="2025-10-11T14:24:06.257095" elapsed="5.886648"/>
+<status status="PASS" start="2025-10-13T15:56:28.388166" elapsed="7.997726"/>
 </suite>
 <statistics>
 <total>

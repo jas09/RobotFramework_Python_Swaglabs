@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ROBOT_OPTIONS = "--outputdir results1"
+        ROBOT_OPTIONS = "--outputdir results"
         JIRA_API_TOKEN = credentials('c2bde01a-7d45-428f-8264-703efb5f0d18')  // Stored securely in Jenkins
     }
 
@@ -36,14 +36,18 @@ pipeline {
 
         stage('Publish Results') {
             steps {
+				if (fileExists('results/output.xml')){
                 robot {
-                    outputPath 'results1'
+                    outputPath 'results'
                     outputFileName 'output.xml'
                     logFileName 'log.html'
                     reportFileName 'report.html'
                     passThreshold 100.0
                     unstableThreshold 80.0
                 }
+				} else {
+					echo "Robot output not found. Skipping publish."
+					}
             }
         }
 

@@ -1,43 +1,20 @@
 pipeline {
     agent any
 
-    options {
-        skipDefaultCheckout(false)
-        disableConcurrentBuilds()
-        durabilityHint('PERFORMANCE_OPTIMIZED')
-    }
-
-    triggers {
-        githubPush()
-    }
-
     environment {
-        ROBOT_OPTIONS = "--outputdir results"
-        JIRA_API_TOKEN = credentials('c2bde01a-7d45-428f-8264-703efb5f0d18')
+        ROBOT_OPTIONS = "--outputdir results1"
+        JIRA_API_TOKEN = credentials('c2bde01a-7d45-428f-8264-703efb5f0d18')  // Stored securely in Jenkins
     }
 
     stages {
         stage('Checkout') {
             steps {
-                echo "Cleaning workspace and checking out latest code..."
-                deleteDir() // Ensures no old commits or cached .git data remain
-                checkout([$class: 'GitSCM',
-                    branches: [[name: '*/main']],
-                    userRemoteConfigs: [[
-                        url: 'https://github.com/jas09/RobotFramework_Python_Swaglabs.git'
-                    ]],
-                    extensions: [
-                        [$class: 'WipeWorkspace'],
-                        [$class: 'CleanBeforeCheckout'],
-                        [$class: 'CloneOption', depth: 0, noTags: false, shallow: false, timeout: 15]
-                    ]
-                ])
+                git url: 'https://github.com/jas09/RobotFramework_Python_Swaglabs.git', branch: 'main'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                echo "Setting up Python virtual environment and installing dependencies..."
                 bat '''
                     python -m venv venv
                     call venv\\Scripts\\activate
@@ -49,7 +26,6 @@ pipeline {
 
         stage('Run Robot Tests (Parallel)') {
             steps {
-                echo "Executing Robot Framework tests in parallel using pabot..."
                 bat '''
                     call venv\\Scripts\\activate
                     mkdir results
@@ -60,9 +36,8 @@ pipeline {
 
         stage('Publish Results') {
             steps {
-                echo "Publishing Robot Framework test results..."
                 robot {
-                    outputPath 'results'
+                    outputPath 'results1'
                     outputFileName 'output.xml'
                     logFileName 'log.html'
                     reportFileName 'report.html'
@@ -76,7 +51,6 @@ pipeline {
         stage('Update Jira') {
             steps {
                 script {
-                    echo "Attempting to update Jira story status..."
                     def storyKey = bat(script: 'git log -1 --pretty=%B | findstr /R "[A-Z]*-[0-9]*"', returnStdout: true).trim()
                     if (storyKey) {
                         bat """
@@ -97,14 +71,7 @@ pipeline {
 
     post {
         always {
-            echo "Archiving Robot Framework reports..."
             archiveArtifacts artifacts: 'results/*.*', fingerprint: true
-        }
-        success {
-            echo "✅ Build completed successfully!"
-        }
-        failure {
-            echo "❌ Build failed. Please check logs and test results."
         }
     }
 }

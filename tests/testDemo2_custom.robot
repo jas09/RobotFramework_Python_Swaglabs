@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    To validate login form
+Documentation    To validate login form and end to end test - Swaglabs
 Library    SeleniumLibrary
 Library    Collections
 Library    ../customLibraries/Products.py    WITH NAME    Products

@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Miscellaneous functionalities Validation
+Documentation    Miscellaneous functionalities Validation Test
 Library    SeleniumLibrary
 Library    String
 Library    Collections

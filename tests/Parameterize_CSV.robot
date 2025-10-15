@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    To Validate Login form
+Documentation    To Validate Login form with excel data
 Library    SeleniumLibrary
 Library    DataDriver    file=Resources/Data12.csv    encoding=utf_8
 Test Setup    Open the browser with the mortgage payment url

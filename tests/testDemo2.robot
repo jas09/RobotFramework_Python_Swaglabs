@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    To validate login form
+Documentation    To validate login form test 2
 Library    SeleniumLibrary
 Library    Collections
 Test Setup    Open the browser with Swaglabs URL

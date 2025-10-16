@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         JIRA_URL = "https://neverabdicate.atlassian.net"
-        JIRA_ISSUE = "RPS-1"
+        JIRA_ISSUE = "RPS-6"
         JIRA_CRED = credentials('Jira_API_Key')
     }
 

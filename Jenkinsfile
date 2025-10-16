@@ -64,7 +64,7 @@ pipeline {
 						--ssl-no-revoke ^
                         -u ${JIRA_CRED_USR}:${JIRA_CRED_PSW} ^
                         -H "Content-Type: application/json" ^
-                        --data "{\\"body\\": \\"Automation run completed. Status: PASS. Build: ${BUILD_URL}\\"}" ^
+                        --data "{\\"body\\":{\\"type\\":\\"doc\\",\\"version\\":1,\\"content\\":[{\\"type\\":\\"paragraph\\",\\"content\\":[{\\"type\\":\\"text\\",\\"text\\":\\"Automation run completed successfully. Status: PASS. Build URL: ${BUILD_URL}\\"}]}]}}" ^
                         ${JIRA_URL}/rest/api/3/issue/${JIRA_ISSUE}/comment
                     """
                 }

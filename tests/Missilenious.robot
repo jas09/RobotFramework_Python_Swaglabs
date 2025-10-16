@@ -31,6 +31,7 @@ Fill the login details and select user option
     Select From List By Value    css:select.form-control    teach
     Select Checkbox    terms
     Checkbox Should Be Selected    terms
+    Element Should Be Visible    css:.blinkingText
     #Click Button    signInBtn
 
 Select the link of child window

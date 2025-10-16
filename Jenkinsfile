@@ -27,7 +27,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {	
-                bat 'pabot --processes 2 --outputdir results tests/'
+                bat 'pabot . --outputdir results tests/'
             }
         }
 
@@ -64,7 +64,7 @@ pipeline {
 						--ssl-no-revoke ^
                         -u ${JIRA_CRED_USR}:${JIRA_CRED_PSW} ^
                         -H "Content-Type: application/json" ^
-                        --data "{\\"body\\": \\"${message}\\"}" ^
+                        --data "{\\"body\\": \\"Automation run completed. Status: PASS. Build: ${BUILD_URL}\\"}" ^
                         ${JIRA_URL}/rest/api/3/issue/${JIRA_ISSUE}/comment
                     """
                 }
@@ -75,7 +75,7 @@ pipeline {
     post {
         always {
             junit 'results/xunit.xml'
-            archiveArtifacts artifacts: 'reports/*.xml', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'results/*.xml', allowEmptyArchive: true
         }
     }
 }

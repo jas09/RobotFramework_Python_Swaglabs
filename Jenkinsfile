@@ -27,7 +27,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {	
-                bat 'pabot . --outputdir results tests/'
+                bat 'pabot --processes 2 --outputdir results tests/'
             }
         }
 

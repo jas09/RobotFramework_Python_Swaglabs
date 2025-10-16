@@ -61,6 +61,7 @@ pipeline {
                     def message = "Automation run completed. Status: ${status}. Build: ${env.BUILD_URL}"
                     bat """
                         curl -X POST ^
+						--ssl-no-revoke ^
                         -u ${JIRA_CRED_USR}:${JIRA_CRED_PSW} ^
                         -H "Content-Type: application/json" ^
                         --data "{\\"body\\": \\"${message}\\"}" ^
@@ -73,7 +74,7 @@ pipeline {
 
     post {
         always {
-            junit 'reports/*.xml'
+            junit 'results/xunit.xml'
             archiveArtifacts artifacts: 'reports/*.xml', allowEmptyArchive: true
         }
     }

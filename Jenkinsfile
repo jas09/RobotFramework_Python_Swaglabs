@@ -26,20 +26,8 @@ pipeline {
         }
 
         stage('Run Tests') {
-            steps {
-                bat 'pabot --processes 2 tests/'
-            }
-            post {
-                success {
-                    script {
-                        currentBuild.description = "✅ Tests passed"
-                    }
-                }
-                failure {
-                    script {
-                        currentBuild.description = "❌ Tests failed"
-                    }
-                }
+            steps {	
+                bat 'pabot --processes 2 --outputdir results tests/'
             }
         }
 
@@ -52,11 +40,20 @@ pipeline {
                     reportFileName: 'report.html',
                     passThreshold: 80,
                     unstableThreshold: 70,
-                    otherFiles: ['screenshot-*.png']
+                    otherFiles: 'screenshot-*.png'
                 )
             }
         }
-
+		stage('Convert to JUnit (Optional)') {
+            steps {
+                bat 'rebot --xunit results/xunit.xml results/output.xml'
+            }
+        }
+		stage('Publish JUnit Results') {
+            steps {
+                junit 'results/xunit.xml'
+            }
+        }
         stage('Update Jira') {
             steps {
                 script {

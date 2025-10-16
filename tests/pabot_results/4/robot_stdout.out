@@ -1,7 +1,7 @@
 ==============================================================================
 Tests                                                                         
 ==============================================================================
-Tests.testDemo2 :: To validate login form                                     
+Tests.testDemo2 :: To validate login form test 2                              
 ==============================================================================
 Validate Successful Login                                             | PASS |
 ------------------------------------------------------------------------------
@@ -11,7 +11,7 @@ Validate Problem_user Login                                           | PASS |
 ------------------------------------------------------------------------------
 Validate Products displayed in the Products Page                      | PASS |
 ------------------------------------------------------------------------------
-Tests.testDemo2 :: To validate login form                             | PASS |
+Tests.testDemo2 :: To validate login form test 2                      | PASS |
 4 tests, 4 passed, 0 failed
 ==============================================================================
 Tests                                                                 | PASS |

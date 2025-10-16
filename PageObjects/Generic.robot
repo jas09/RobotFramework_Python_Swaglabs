@@ -15,6 +15,9 @@ ${browser_name}=    Edge
 *** Keywords ***
 Open the browser with Swaglabs URL
     Create Webdriver    Firefox
+    #${options}=    Evaluate    sys.modules['selenium.webdriver'].FirefoxOptions()
+    #Call Method    ${options}    add_argument    --headless
+    #Create Webdriver    Firefox    options=${options}
     Go To    ${url}
 
 Close Browser Session

@@ -1,7 +1,7 @@
 ==============================================================================
 Tests                                                                         
 ==============================================================================
-Tests.testDemo2 custom :: To validate login form                              
+Tests.testDemo2 custom :: To validate login form and end to end test - Swag...
 ==============================================================================
 Validate Successful Login                                             | PASS |
 ------------------------------------------------------------------------------
@@ -11,7 +11,7 @@ Validate Problem_user Login                                           | PASS |
 ------------------------------------------------------------------------------
 Validating End to End Flow till successful product placement          | PASS |
 ------------------------------------------------------------------------------
-Tests.testDemo2 custom :: To validate login form                      | PASS |
+Tests.testDemo2 custom :: To validate login form and end to end te... | PASS |
 4 tests, 4 passed, 0 failed
 ==============================================================================
 Tests                                                                 | PASS |

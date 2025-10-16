@@ -1,7 +1,7 @@
 ==============================================================================
 Tests                                                                         
 ==============================================================================
-Tests.Parameterize CSV :: To Validate Login form                              
+Tests.Parameterize CSV :: To Validate Login form with excel data              
 ==============================================================================
 Invalid username                                                      | PASS |
 ------------------------------------------------------------------------------
@@ -25,7 +25,7 @@ long password                                                         | PASS |
 ------------------------------------------------------------------------------
 Login with user  and password                                         | PASS |
 ------------------------------------------------------------------------------
-Tests.Parameterize CSV :: To Validate Login form                      | PASS |
+Tests.Parameterize CSV :: To Validate Login form with excel data      | PASS |
 11 tests, 11 passed, 0 failed
 ==============================================================================
 Tests                                                                 | PASS |

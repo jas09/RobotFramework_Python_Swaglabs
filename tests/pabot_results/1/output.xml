@@ -1,221 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-13T15:56:28.405470" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-16T10:53:24.498168" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Projects\PythonProject_RobotFramework\tests">
 <suite id="s1-s1" name="Parameterize" source="D:\Projects\PythonProject_RobotFramework\tests\Parameterize.robot">
 <test id="s1-s1-t1" name="Invalid username" line="11">
 <kw name="Open the browser with the mortgage payment url" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:28.929949" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<msg time="2025-10-16T10:53:24.664858" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>Firefox</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-10-13T15:56:28.929706" elapsed="8.739692"/>
+<status status="PASS" start="2025-10-16T10:53:24.664706" elapsed="7.790919"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:37.669939" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<msg time="2025-10-16T10:53:32.456277" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
 <arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-13T15:56:37.669677" elapsed="1.196641"/>
+<status status="PASS" start="2025-10-16T10:53:32.455956" elapsed="0.792529"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:28.928883" elapsed="9.937680"/>
+<status status="PASS" start="2025-10-16T10:53:24.664214" elapsed="8.584524"/>
 </kw>
 <kw name="Validate Unsuccessful Login">
 <kw name="Fill the login form">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:38.868329" level="INFO">Typing text 'asasa' into text field 'username'.</msg>
+<msg time="2025-10-16T10:53:33.250847" level="INFO">Typing text 'asasa' into text field 'username'.</msg>
 <arg>username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-13T15:56:38.867844" elapsed="0.262086"/>
+<status status="PASS" start="2025-10-16T10:53:33.250306" elapsed="0.325172"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:39.130532" level="INFO">Typing text 'learning' into text field 'password'.</msg>
+<msg time="2025-10-16T10:53:33.576170" level="INFO">Typing text 'learning' into text field 'password'.</msg>
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-13T15:56:39.130171" elapsed="0.051431"/>
+<status status="PASS" start="2025-10-16T10:53:33.575754" elapsed="0.076870"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:39.182427" level="INFO">Clicking button 'signInBtn'.</msg>
+<msg time="2025-10-16T10:53:33.653656" level="INFO">Clicking button 'signInBtn'.</msg>
 <arg>signInBtn</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-13T15:56:39.181900" elapsed="0.113652"/>
+<status status="PASS" start="2025-10-16T10:53:33.653067" elapsed="0.236014"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2025-10-13T15:56:38.867291" elapsed="0.428437"/>
+<status status="PASS" start="2025-10-16T10:53:33.249832" elapsed="0.639457"/>
 </kw>
 <kw name="wait until it checks and display error message">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Error_Message_Login}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-13T15:56:39.296358" elapsed="2.036691"/>
+<status status="PASS" start="2025-10-16T10:53:33.890049" elapsed="2.003660"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:39.295953" elapsed="2.037270"/>
+<status status="PASS" start="2025-10-16T10:53:33.889540" elapsed="2.004319"/>
 </kw>
 <kw name="verify error message is correct">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:41.334082" level="INFO">Verifying element 'css:.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
+<msg time="2025-10-16T10:53:35.894691" level="INFO">Verifying element 'css:.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
 <arg>${Error_Message_Login}</arg>
 <arg>Incorrect username/password.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-10-13T15:56:41.333791" elapsed="0.015037"/>
+<status status="PASS" start="2025-10-16T10:53:35.894414" elapsed="0.009951"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:41.333432" elapsed="0.015565"/>
+<status status="PASS" start="2025-10-16T10:53:35.894070" elapsed="0.010423"/>
 </kw>
 <arg>asasa</arg>
 <arg>learning</arg>
-<status status="PASS" start="2025-10-13T15:56:38.866824" elapsed="2.482241"/>
+<status status="PASS" start="2025-10-16T10:53:33.249210" elapsed="2.655334"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-13T15:56:41.349336" elapsed="3.075576"/>
+<status status="PASS" start="2025-10-16T10:53:35.904768" elapsed="2.630801"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:28.928053" elapsed="15.496990"/>
+<status status="PASS" start="2025-10-16T10:53:24.663721" elapsed="13.871956"/>
 </test>
 <test id="s1-s1-t2" name="Invalid password" line="12">
 <kw name="Open the browser with the mortgage payment url" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:44.426098" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<msg time="2025-10-16T10:53:38.536867" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>Firefox</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-10-13T15:56:44.425960" elapsed="5.750789"/>
+<status status="PASS" start="2025-10-16T10:53:38.536708" elapsed="5.691661"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:50.177826" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<msg time="2025-10-16T10:53:44.228794" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
 <arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-13T15:56:50.176971" elapsed="0.499106"/>
+<status status="PASS" start="2025-10-16T10:53:44.228576" elapsed="0.368264"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:44.425725" elapsed="6.250482"/>
+<status status="PASS" start="2025-10-16T10:53:38.536428" elapsed="6.060540"/>
 </kw>
 <kw name="Validate Unsuccessful Login">
 <kw name="Fill the login form">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:50.677285" level="INFO">Typing text 'rahulshettyacademy' into text field 'username'.</msg>
+<msg time="2025-10-16T10:53:44.598280" level="INFO">Typing text 'rahulshettyacademy' into text field 'username'.</msg>
 <arg>username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-13T15:56:50.677051" elapsed="0.112973"/>
+<status status="PASS" start="2025-10-16T10:53:44.597976" elapsed="0.183943"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:50.790696" level="INFO">Typing text '21321' into text field 'password'.</msg>
+<msg time="2025-10-16T10:53:44.782657" level="INFO">Typing text '21321' into text field 'password'.</msg>
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-13T15:56:50.790263" elapsed="0.019616"/>
+<status status="PASS" start="2025-10-16T10:53:44.782179" elapsed="0.043658"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:50.810475" level="INFO">Clicking button 'signInBtn'.</msg>
+<msg time="2025-10-16T10:53:44.826769" level="INFO">Clicking button 'signInBtn'.</msg>
 <arg>signInBtn</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-13T15:56:50.810152" elapsed="0.082133"/>
+<status status="PASS" start="2025-10-16T10:53:44.826184" elapsed="0.107939"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2025-10-13T15:56:50.676782" elapsed="0.215675"/>
+<status status="PASS" start="2025-10-16T10:53:44.597624" elapsed="0.336619"/>
 </kw>
 <kw name="wait until it checks and display error message">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Error_Message_Login}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-13T15:56:50.892997" elapsed="2.149808"/>
+<status status="PASS" start="2025-10-16T10:53:44.934670" elapsed="2.102984"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:50.892659" elapsed="2.150292"/>
+<status status="PASS" start="2025-10-16T10:53:44.934391" elapsed="2.103394"/>
 </kw>
 <kw name="verify error message is correct">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:53.043774" level="INFO">Verifying element 'css:.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
+<msg time="2025-10-16T10:53:47.038534" level="INFO">Verifying element 'css:.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
 <arg>${Error_Message_Login}</arg>
 <arg>Incorrect username/password.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-10-13T15:56:53.043498" elapsed="0.008407"/>
+<status status="PASS" start="2025-10-16T10:53:47.038310" elapsed="0.008368"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:53.043133" elapsed="0.008930"/>
+<status status="PASS" start="2025-10-16T10:53:47.037964" elapsed="0.008803"/>
 </kw>
 <arg>rahulshettyacademy</arg>
 <arg>21321</arg>
-<status status="PASS" start="2025-10-13T15:56:50.676378" elapsed="2.375755"/>
+<status status="PASS" start="2025-10-16T10:53:44.597149" elapsed="2.449654"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-13T15:56:53.052378" elapsed="2.715681"/>
+<status status="PASS" start="2025-10-16T10:53:47.046950" elapsed="2.609146"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:44.425424" elapsed="11.342725"/>
+<status status="PASS" start="2025-10-16T10:53:38.536074" elapsed="11.120156"/>
 </test>
 <test id="s1-s1-t3" name="Special characters" line="13">
 <kw name="Open the browser with the mortgage payment url" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:56:55.769154" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<msg time="2025-10-16T10:53:49.657831" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>Firefox</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-10-13T15:56:55.769049" elapsed="5.422680"/>
+<status status="PASS" start="2025-10-16T10:53:49.657646" elapsed="5.123339"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:57:01.192281" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<msg time="2025-10-16T10:53:54.781605" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
 <arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-13T15:57:01.192014" elapsed="0.505044"/>
+<status status="PASS" start="2025-10-16T10:53:54.781273" elapsed="0.340046"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:55.768823" elapsed="5.928496"/>
+<status status="PASS" start="2025-10-16T10:53:49.657313" elapsed="5.464397"/>
 </kw>
 <kw name="Validate Unsuccessful Login">
 <kw name="Fill the login form">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:57:01.698516" level="INFO">Typing text '%^*' into text field 'username'.</msg>
+<msg time="2025-10-16T10:53:55.123393" level="INFO">Typing text '%^*' into text field 'username'.</msg>
 <arg>username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-13T15:57:01.698216" elapsed="0.090954"/>
+<status status="PASS" start="2025-10-16T10:53:55.123020" elapsed="0.078963"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:57:01.789794" level="INFO">Typing text 'learning' into text field 'password'.</msg>
+<msg time="2025-10-16T10:53:55.202598" level="INFO">Typing text 'learning' into text field 'password'.</msg>
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-13T15:57:01.789369" elapsed="0.030778"/>
+<status status="PASS" start="2025-10-16T10:53:55.202206" elapsed="0.023813"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:57:01.820748" level="INFO">Clicking button 'signInBtn'.</msg>
+<msg time="2025-10-16T10:53:55.226454" level="INFO">Clicking button 'signInBtn'.</msg>
 <arg>signInBtn</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-13T15:57:01.820393" elapsed="0.092949"/>
+<status status="PASS" start="2025-10-16T10:53:55.226203" elapsed="0.073529"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2025-10-13T15:57:01.697864" elapsed="0.215654"/>
+<status status="PASS" start="2025-10-16T10:53:55.122531" elapsed="0.177326"/>
 </kw>
 <kw name="wait until it checks and display error message">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Error_Message_Login}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-13T15:57:01.914083" elapsed="2.110706"/>
+<status status="PASS" start="2025-10-16T10:53:55.300404" elapsed="2.105922"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:57:01.913724" elapsed="2.111220"/>
+<status status="PASS" start="2025-10-16T10:53:55.300030" elapsed="2.106382"/>
 </kw>
 <kw name="verify error message is correct">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-10-13T15:57:04.026393" level="INFO">Verifying element 'css:.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
+<msg time="2025-10-16T10:53:57.406914" level="INFO">Verifying element 'css:.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
 <arg>${Error_Message_Login}</arg>
 <arg>Incorrect username/password.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-10-13T15:57:04.025898" elapsed="0.007426"/>
+<status status="PASS" start="2025-10-16T10:53:57.406758" elapsed="0.005474"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:57:04.025146" elapsed="0.008299"/>
+<status status="PASS" start="2025-10-16T10:53:57.406523" elapsed="0.005833"/>
 </kw>
 <arg>%^*</arg>
 <arg>learning</arg>
-<status status="PASS" start="2025-10-13T15:57:01.697494" elapsed="2.335993"/>
+<status status="PASS" start="2025-10-16T10:53:55.121981" elapsed="2.290434"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-13T15:57:04.033694" elapsed="2.616229"/>
+<status status="PASS" start="2025-10-16T10:53:57.412625" elapsed="2.728913"/>
 </kw>
-<status status="PASS" start="2025-10-13T15:56:55.768587" elapsed="10.881502"/>
+<status status="PASS" start="2025-10-16T10:53:49.656815" elapsed="10.484849"/>
 </test>
 <doc>Login on Multiple username and password combination</doc>
-<status status="PASS" start="2025-10-13T15:56:28.427697" elapsed="38.222965"/>
+<status status="PASS" start="2025-10-16T10:53:24.521992" elapsed="35.620219"/>
 </suite>
-<status status="PASS" start="2025-10-13T15:56:28.418662" elapsed="38.232729"/>
+<status status="PASS" start="2025-10-16T10:53:24.511583" elapsed="35.631289"/>
 </suite>
 <statistics>
 <total>

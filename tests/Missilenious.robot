@@ -18,6 +18,9 @@ Validate Child Window Functionality
 *** Keywords ***
 Navigate to LoginPage Url
     Create Webdriver    Edge
+    #${options}=    Evaluate    sys.modules['selenium.webdriver'].FirefoxOptions()
+    #Call Method    ${options}    add_argument    --headless
+    #Create Webdriver    Firefox    options=${options}
     Go To    ${url_loginPage}
 
 Fill the login details and select user option
